@@ -555,6 +555,7 @@ img {
   border-radius: 4px;
   border: none;
   margin-left: 24px;
+  cursor: pointer;
   transform: background var(--transition);
 }
 
@@ -727,7 +728,7 @@ img {
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 
 .modal-svg {
@@ -736,20 +737,23 @@ img {
 }
 
 .modal-button {
+  position: absolute;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
-  margin-left: auto;
   border-radius: 50%;
-  transform: background var(--transition), border var(--transition);
+  transform: background var(--transition),
+    border var(--transition) fill var(--transition);
   cursor: pointer;
-  margin-bottom: 24px;
+  top: 24px;
+  right: 24px;
 }
 
 .modal-button:hover,
 .modal-button:focus {
   background: var(--light-blue);
+  fill: var(--white);
 }
 
 .is-hidden {
@@ -768,8 +772,13 @@ img {
   margin-bottom: 16px;
 }
 
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
 .modal-span {
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -799,7 +808,6 @@ img {
 
 .modal-page {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .modal-image {
@@ -810,6 +818,7 @@ img {
 }
 
 .modal-textarea {
+  display: block;
   resize: none;
   width: 360px;
   height: 120px;
@@ -832,6 +841,10 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-check {
+  margin: 16px 0 24px 0;
+}
+
 .check-text {
   display: flex;
   align-items: flex-end;
@@ -840,7 +853,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--gray);
-  margin: 16px 0 24px 0;
 }
 .check-link {
   line-height: 1.33;
