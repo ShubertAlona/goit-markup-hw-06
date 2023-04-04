@@ -71,7 +71,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="title-section">Web Studio</h2>
+          <h2 class="visually-hidden">Web Studio</h2>
           <ul class="content list">
             <li class="content-list">
               <div class="content-image">
@@ -491,10 +491,10 @@
             Leave your contacts and we will call you back
           </p>
           <form class="modal-form">
+            <label class="modal-label">
+              <span class="modal-span">Name</span></label
+            >
             <div class="modal-page">
-              <label class="modal-label">
-                <span class="modal-span">Name</span></label
-              >
               <input
                 class="modal-text"
                 type="text"
@@ -508,10 +508,11 @@
                 ></use>
               </svg>
             </div>
+
+            <label class="modal-label"
+              ><span class="modal-span">Phone</span></label
+            >
             <div class="modal-page">
-              <label class="modal-label"
-                ><span class="modal-span">Phone</span></label
-              >
               <input
                 class="modal-text"
                 type="tel"
@@ -525,11 +526,10 @@
                 ></use>
               </svg>
             </div>
-
+            <label class="modal-label">
+              <span class="modal-span">Email</span></label
+            >
             <div class="modal-page">
-              <label class="modal-label">
-                <span class="modal-span">Email</span></label
-              >
               <input
                 class="modal-text"
                 type="email"
@@ -543,9 +543,9 @@
                 ></use>
               </svg>
             </div>
+            <label class="modal-label" for="modal-label"></label>
+            <span class="modal-span">Comment</span>
             <div class="modal-check">
-              <label class="modal-label" for="modal-label"></label>
-              <span class="modal-span">Comment</span>
               <textarea
                 name="modal-label"
                 id="modal-label"

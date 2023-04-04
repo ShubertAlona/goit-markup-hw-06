@@ -260,10 +260,6 @@ img {
   width: 264px;
 }
 
-.title-section {
-  display: none;
-}
-
 .content-image {
   display: flex;
   justify-content: center;
@@ -778,7 +774,7 @@ img {
 
 .modal-label {
   display: block;
-  margin-bottom: 8px;
+  margin: 8px 4px;
 }
 
 .modal-span {
@@ -788,7 +784,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--gray);
-  margin-bottom: 4px;
 }
 
 .modal-text {
@@ -846,7 +841,7 @@ img {
 }
 
 .modal-check {
-  margin: 16px 0 24px 0;
+  margin: 4px 0 24px 0;
 }
 
 .check-text {
@@ -857,6 +852,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--gray);
+  margin-top: 16px;
 }
 .check-link {
   line-height: 1.33;
