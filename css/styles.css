@@ -719,7 +719,7 @@ img {
 }
 .modal {
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background: var(--white-modal);
   border-radius: 4px;
   position: absolute;
@@ -774,7 +774,6 @@ img {
 
 .modal-label {
   display: block;
-  margin: 8px 4px;
 }
 
 .modal-span {
@@ -807,6 +806,8 @@ img {
 
 .modal-page {
   position: relative;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .modal-image {
@@ -840,10 +841,6 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-check {
-  margin: 4px 0 24px 0;
-}
-
 .check-text {
   display: flex;
   align-items: flex-end;
@@ -852,7 +849,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--gray);
-  margin-top: 16px;
 }
 .check-link {
   line-height: 1.33;
@@ -867,6 +863,15 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   display: block;
+}
+
+.modal-check {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.modal-wrap-check {
+  margin-bottom: 24px;
 }
 
 .modal-check-input:checked + .check-text::before {
