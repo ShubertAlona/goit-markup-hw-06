@@ -807,7 +807,6 @@ img {
 .modal-page {
   position: relative;
   margin-top: 4px;
-  margin-bottom: 8px;
 }
 
 .modal-image {
@@ -827,6 +826,7 @@ img {
   padding: 8px 16px;
   outline: transparent;
   transform: border-color var(--transition);
+  margin-top: 4px;
 }
 
 .modal-textarea:focus {
@@ -870,8 +870,14 @@ img {
   margin-bottom: 16px;
 }
 
+.modal-wrap {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .modal-wrap-check {
   margin-bottom: 24px;
+  margin-top: 16px;
 }
 
 .modal-check-input:checked + .check-text::before {
